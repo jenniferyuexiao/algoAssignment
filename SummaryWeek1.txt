@@ -1,1 +1,32 @@
+印象最深的是关于“自顶向下的编程方法”，工作中缺乏整个项目设计的经验，写代码的时候也容易纠结在细节里面，这种习惯也很容易带入到刷题的过程中。下面是关于如何理解自顶向下的编程方法：
+#Top-Down Model:
+a system design approach where design starts from the system as a whole. Then divided the whole system into smaller sub-applications with more details. 
 
+
+#Top-Down design in an Object Oriented Language:
+Always question myself is my code have a design problem?
+1. Does my code has a large method? (over 100 lines)
+2. Does my method names indicate a specific operation?
+3. Does objects/methods appear to be 'Reusable'?
+4. Any duplicated code/operation?
+5. Does my code compose of small, manageable chunks that 
+   relate to problem concepts/tasks, 
+   are easier to write,
+   easier to understand,
+   have fewer undersiable dependencies or side-effects on other areas of code
+   
+#How to design?
+1. Divide and Conquer: 
+   Break down problem into small chunks: by aspect(log manager), by actor(person object), or by functionality(EmailManager), and within a method by functional decomposition.
+   Refactor: as break down into finer-grained chunks, Alter the overall structure 
+   Encapsulation: group similar functionality into a single class; group data and behavior associated with a real world entity into an object
+2. Break functions into smaller chunks:
+   the top level function that calls the subfunctions is like an index
+   each subfunction has a nice name that clearly identifies its function
+
+#The Design Process:
+1. Draw a picture of system by writing down the functionality
+2. Identity what are the major components in the system
+3. Groupd similar tasks/aspects of program into a single object; objects have to play the role of modules or services in Java
+4. For each method of each object, apply top-down functional decomposition - "atomic" operation
+* Coding implement the methods top-down, Testing use unit test bottom-up
