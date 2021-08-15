@@ -1,1 +1,23 @@
 
+本周总结：
+Tree作为面试常考和生活常备数据结构，应该熟练掌握：
+
+Step1: Binary Tree
+  Follow properties of a tree; 
+  a node have at most two child nodes(left & right)
+
+Step2: Binary Search Tree
+  Follow properties of a tree; 
+  a node have at most two child nodes(left & right); 
+  left child of a given node should be less than equal to the parent value, right child should be greater than or equal to the parent value
+
+Step3: N-node Tree
+  Follow properties of a tree;
+  a node can have any number of child nodes
+
+其他由二叉树展开的更多树后面再继续总结，例如
+Step4: AVL Tree
+  Follow properties of binary search trees;
+  self-balancing;
+  each node stores a value called a balance facotr with is the difference in height between its left subtree and right subtree;
+  all the nodes must have a balance of -1/0/1
